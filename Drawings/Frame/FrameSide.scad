@@ -1,7 +1,7 @@
 include <Dimensions.scad>;
 use <..\Hardware\SquareTube.scad>;
 
-module FrameSide()
+module FrameSideA()
 {
    difference() 
    {
@@ -110,5 +110,11 @@ module MakePart_GrillSupport()
 	}
 }
 
-//translate([_frameTubeWidth,0,0]) mirror([1,0,0]) 
-	FrameSide();
+module FrameSideB()
+{
+	translate([_frameTubeWidth,0,0]) 
+		mirror([1,0,0]) 
+			FrameSideA();
+}
+
+FrameSideA();

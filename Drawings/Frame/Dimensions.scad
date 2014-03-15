@@ -25,6 +25,12 @@ _legLenght = 800;
 _legWidth = _frameTubeWidth;
 _legFrontOffset = 130;
 _legRearOffset = 1370;
-_legCrossSectionHeight = 230;
+_legCrossSectionHeight = 250;
 _legCrossSectionWidth = _frameCrossTubeWidth;
 _legCrossSectionLenght = _legRearOffset-_legFrontOffset-_legWidth;
+
+// Slat Support
+_slatLength = 1200;
+_slatWidth = 1196;
+_slatHeight = 40;
+_slatSheetWall = 3;
